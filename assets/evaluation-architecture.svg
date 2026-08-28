@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760" role="img" aria-labelledby="t d">
+  <title id="t">CRUCIBLE evaluation architecture</title><desc id="d">Separated task, model, agent, tool, environment, scoring, and evidence trust boundaries.</desc>
+  <rect width="1500" height="760" rx="24" fill="#081522"/>
+  <g fill="#10283b" stroke="#2d5975" stroke-width="2" font-family="ui-monospace, monospace" text-anchor="middle">
+    <rect x="70" y="90" width="250" height="90" rx="12"/><rect x="410" y="90" width="250" height="90" rx="12"/><rect x="750" y="90" width="250" height="90" rx="12"/><rect x="1090" y="90" width="250" height="90" rx="12"/>
+    <rect x="240" y="330" width="300" height="100" rx="12"/><rect x="650" y="330" width="300" height="100" rx="12"/><rect x="1060" y="330" width="300" height="100" rx="12"/>
+    <rect x="445" y="570" width="610" height="100" rx="12" stroke="#35d5ad"/>
+    <g fill="#e4f1fc" stroke="none" font-size="22"><text x="195" y="143">TASK REGISTRY</text><text x="535" y="143">MODEL REGISTRY</text><text x="875" y="143">AGENT REGISTRY</text><text x="1215" y="143">TOOL REGISTRY</text><text x="390" y="389">EVAL ORCHESTRATOR</text><text x="800" y="389">ISOLATED ENVIRONMENT</text><text x="1210" y="389">GROUND TRUTH + SCORER</text><text x="750" y="629">TAMPER-EVIDENT EVIDENCE PACKAGE</text></g>
+  </g>
+  <g stroke="#55bca9" stroke-width="3" fill="none"><path d="M195 185V270H390V325"/><path d="M535 185V270H390V325"/><path d="M875 185V270H390V325"/><path d="M1215 185V270H390V325"/><path d="M545 380H645"/><path d="M955 380H1055"/><path d="M390 435V520H750V565"/><path d="M800 435V565"/><path d="M1210 435V520H750V565"/></g>
+  <g fill="#6f8da5" font-family="ui-sans-serif, system-ui" font-size="16"><text x="75" y="710">Trust boundaries are explicit. The model cannot read scoring code, reference answers, or sequestered task material.</text></g>
+</svg>

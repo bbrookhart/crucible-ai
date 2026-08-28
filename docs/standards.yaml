@@ -1,0 +1,25 @@
+- name: NIST AI 200-2 TEVV-Athlon
+  version: Initial Public Draft, August 2026
+  status: initial-public-draft
+  retrieved_at: 2026-08-28
+  source: https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems
+- name: NIST AI Risk Management Framework
+  version: "1.0"
+  status: published; NIST revision in progress
+  retrieved_at: 2026-08-28
+  source: https://www.nist.gov/itl/ai-risk-management-framework
+- name: Google DeepMind Frontier Safety Framework
+  version: "3.1"
+  status: public framework
+  retrieved_at: 2026-08-28
+  source: https://deepmind.google/blog/strengthening-our-frontier-safety-framework/
+- name: MITRE ATT&CK
+  version: "19.2"
+  status: current
+  retrieved_at: 2026-08-28
+  source: https://attack.mitre.org/resources/versions/
+- name: OWASP Top 10 for Agentic Applications
+  version: "2026"
+  status: published
+  retrieved_at: 2026-08-28
+  source: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/

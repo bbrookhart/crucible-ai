@@ -1,0 +1,9 @@
+components:
+  - name: legacy-document-signer
+    algorithm: sha1
+    purpose: non-production-fixture
+    crypto_agility: false
+  - name: modern-integrity-check
+    algorithm: sha256
+    purpose: non-production-fixture
+    crypto_agility: true

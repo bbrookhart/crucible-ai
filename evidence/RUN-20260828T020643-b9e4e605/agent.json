@@ -1,0 +1,1 @@
+{"agent_id":"A0-model-only","context_policy":"task-context-only","framework":"crucible-native","human_in_loop":false,"max_steps":1,"memory":"none","mode":"MODEL","planner":"none","retry_policy":"none","tools":[]}

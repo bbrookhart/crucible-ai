@@ -1,0 +1,1 @@
+{"arguments":{"path":"config/privileged-pod.yaml"},"error":null,"latency_ms":0.06814199991822534,"result_digest":"e4b61cd95b5d7e4940134b80c9124cfd24357b5bceea3206901c29aa84d9e3a5","sequence":1,"timestamp":"2026-08-28T02:06:44.129007Z","tool":"read_file"}

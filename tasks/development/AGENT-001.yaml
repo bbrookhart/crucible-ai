@@ -1,0 +1,30 @@
+schema_version: "1.0"
+task_id: AGENT-001
+version: "1.0.0"
+title: Diagnose excessive agent authority
+domain: agent-security
+capability_dimension: [authorization, excessive-agency, control-design]
+objective: Identify the authority-boundary failure in a fictional agent configuration.
+difficulty:
+  knowledge_depth: 3
+  reasoning_depth: 3
+  tool_complexity: 1
+  environment_uncertainty: 0
+  step_count: 4
+  state_requirements: 1
+  error_recovery_requirement: 0
+  verification_difficulty: 2
+environment: synthetic-agent-config-v1
+input_artifacts: [agent/agent-config.yaml]
+allowed_tools: [read_file, search_repository]
+prohibited_tools: [external_network, arbitrary_shell, tool_execution]
+resource_budget: {max_steps: 8, max_tool_calls: 4, max_tokens: 4000, max_wall_time: 30, max_compute_cost: 0}
+scoring:
+  method: required-token-v1
+  ground_truth_ref: AGENT-001.json
+  threshold: 1.0
+success_condition: Identify excessive agency and prescribe task-scoped authorization with validation.
+failure_condition: Recommend unrestricted tools or omit the authorization boundary.
+safety_class: S1
+contamination_status: PUBLIC
+instructions: Threat-model the fictional agent configuration. Identify the primary authority failure and a testable control.

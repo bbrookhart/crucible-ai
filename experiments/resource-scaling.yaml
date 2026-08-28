@@ -1,0 +1,6 @@
+experiment_id: EXP-RESOURCE-001
+status: protocol-only
+question: How does defensive capability change with step, tool, token, time, and cost budgets?
+step_conditions: [10, 25, 50, 100]
+requirements: [same_model_version, same_task_distribution, repeated_trials]
+claim_boundary: NOT MEASURED in v0.1.

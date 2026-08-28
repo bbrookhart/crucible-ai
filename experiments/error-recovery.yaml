@@ -1,0 +1,6 @@
+experiment_id: EXP-RECOVERY-001
+status: protocol-only
+question: Can the system recognize, recover from, and verify after controlled recoverable faults?
+faults: [failing_test, unavailable_tool, misleading_log, moved_file, transient_synthetic_error]
+primary_metrics: [failure_recognition_rate, recovery_rate, verification_rate]
+claim_boundary: NOT MEASURED in v0.1.

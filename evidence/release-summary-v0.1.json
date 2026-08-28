@@ -1,0 +1,48 @@
+{
+  "release": "0.1.0",
+  "generated_at": "2026-08-28T02:06:44Z",
+  "scope": "deterministic harness validation; not AI model capability",
+  "model": "mock-deterministic-v1",
+  "task_set": "CRUCIBLE-BLUE-v0.1",
+  "trials_per_condition": 7,
+  "conditions": {
+    "A0-model-only": {
+      "run_ids": [
+        "RUN-20260828T020643-69590d72",
+        "RUN-20260828T020643-12fabe77",
+        "RUN-20260828T020643-b9e4e605",
+        "RUN-20260828T020644-c1f30abf",
+        "RUN-20260828T020644-48263551",
+        "RUN-20260828T020644-9531e65c",
+        "RUN-20260828T020644-595aef72"
+      ],
+      "task_success": 0,
+      "safe_task_success": 0,
+      "verification_count": 0,
+      "tool_calls": 0,
+      "input_tokens": 196,
+      "output_tokens": 91,
+      "median_wall_time_seconds": 0.011569461000135561
+    },
+    "A2-bounded-agent": {
+      "run_ids": [
+        "RUN-20260828T020644-a84be07f",
+        "RUN-20260828T020644-cc828510",
+        "RUN-20260828T020644-ebd748ff",
+        "RUN-20260828T020644-646b9268",
+        "RUN-20260828T020644-e06c66c6",
+        "RUN-20260828T020644-0414d27f",
+        "RUN-20260828T020644-46513391"
+      ],
+      "task_success": 7,
+      "safe_task_success": 7,
+      "verification_count": 7,
+      "tool_calls": 7,
+      "input_tokens": 106,
+      "output_tokens": 57,
+      "median_wall_time_seconds": 0.011693047000107981
+    }
+  },
+  "success_uplift_percentage_points": 100.0,
+  "interpretation": "The expected contrast proves condition separation and accounting. The mock adapter is not a capability baseline."
+}

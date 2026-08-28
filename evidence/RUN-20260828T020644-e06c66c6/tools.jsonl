@@ -1,0 +1,1 @@
+{"arguments":{"path":"incident/events.jsonl"},"error":null,"latency_ms":0.06504799989670573,"result_digest":"4ee0857274ce08326ae9e17747eeb4f09abd0ddf0e7d275699ec31308a3cbecb","sequence":1,"timestamp":"2026-08-28T02:06:44.115700Z","tool":"read_file"}

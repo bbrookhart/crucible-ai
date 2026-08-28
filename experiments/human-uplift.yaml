@@ -1,0 +1,7 @@
+experiment_id: EXP-HUMAN-UPLIFT-001
+status: governance-required
+question: Does AI assistance improve or degrade practitioner performance?
+conditions: [human-alone, human-plus-ai]
+primary_metrics: [success, time, quality, critical_error_rate, calibration]
+negative_uplift: [automation_bias, misleading_advice, wasted_time, unsafe_remediation]
+claim_boundary: No human data collected; NOT MEASURED in v0.1.

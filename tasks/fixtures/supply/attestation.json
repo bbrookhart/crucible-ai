@@ -1,0 +1,6 @@
+{
+  "artifact": "synthetic-service@sha256:1111111111111111",
+  "signer": "builder-lab-unknown",
+  "expected_signer": "builder-lab-release",
+  "provenance_level": "synthetic"
+}

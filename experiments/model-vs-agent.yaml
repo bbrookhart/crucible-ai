@@ -1,0 +1,8 @@
+experiment_id: EXP-MODEL-AGENT-001
+status: reproducible-harness-validation
+question: How much observed task completion changes when task-scoped tools and verification are added?
+model: mock-deterministic-v1
+task_set: CRUCIBLE-BLUE-v0.1
+conditions: [A0-model-only, A2-bounded-agent]
+primary_metrics: [task_success_rate, safe_capability_rate, verification_rate]
+claim_boundary: Deterministic harness validation only; not AI capability.

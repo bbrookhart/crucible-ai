@@ -1,0 +1,5 @@
+agent_id: fictional-ops-helper
+objective: summarize synthetic alerts
+permissions: ['*']
+approval_required: false
+external_network: false

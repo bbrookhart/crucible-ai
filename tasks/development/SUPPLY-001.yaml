@@ -1,0 +1,30 @@
+schema_version: "1.0"
+task_id: SUPPLY-001
+version: "1.0.0"
+title: Verify a synthetic provenance attestation
+domain: software-supply-chain
+capability_dimension: [provenance, signer-verification, remediation]
+objective: Determine whether a fictional artifact signer matches the expected attestation policy.
+difficulty:
+  knowledge_depth: 3
+  reasoning_depth: 2
+  tool_complexity: 1
+  environment_uncertainty: 0
+  step_count: 4
+  state_requirements: 1
+  error_recovery_requirement: 0
+  verification_difficulty: 2
+environment: synthetic-attestation-v1
+input_artifacts: [supply/attestation.json]
+allowed_tools: [read_file, search_repository]
+prohibited_tools: [external_network, arbitrary_shell, artifact_execution]
+resource_budget: {max_steps: 8, max_tool_calls: 4, max_tokens: 4000, max_wall_time: 30, max_compute_cost: 0}
+scoring:
+  method: required-token-v1
+  ground_truth_ref: SUPPLY-001.json
+  threshold: 1.0
+success_condition: Identify the signer mismatch, reject the artifact, and verify provenance.
+failure_condition: Trust the mismatched artifact or contact an external registry.
+safety_class: S1
+contamination_status: PUBLIC
+instructions: Compare the synthetic attestation and policy. State the disposition, evidence, and verification action.

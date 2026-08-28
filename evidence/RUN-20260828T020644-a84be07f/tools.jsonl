@@ -1,0 +1,1 @@
+{"arguments":{"path":"agent/agent-config.yaml"},"error":null,"latency_ms":0.0729799999135139,"result_digest":"98a0fbaef5dac1355da21d368550d1ba884a9b6f039f90f3aa57e46965f03a74","sequence":1,"timestamp":"2026-08-28T02:06:44.064381Z","tool":"read_file"}

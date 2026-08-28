@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="620" viewBox="0 0 1500 620" role="img" aria-labelledby="t d">
+  <title id="t">CRUCIBLE BLACKBOX sequestered evaluation</title><desc id="d">Commit, run, reveal, and verify flow with encrypted task vault and ephemeral runner.</desc>
+  <rect width="1500" height="620" rx="24" fill="#07131f"/>
+  <text x="80" y="80" fill="#e6f3ff" font-family="ui-monospace, monospace" font-size="30" letter-spacing="4">CRUCIBLE // BLACKBOX</text>
+  <g font-family="ui-monospace, monospace" text-anchor="middle"><rect x="80" y="190" width="260" height="130" rx="14" fill="#10283b" stroke="#4b7897"/><rect x="450" y="190" width="260" height="130" rx="14" fill="#10283b" stroke="#30d0a8"/><rect x="820" y="190" width="260" height="130" rx="14" fill="#10283b" stroke="#30d0a8"/><rect x="1190" y="190" width="230" height="130" rx="14" fill="#10283b" stroke="#70a7ff"/>
+  <g fill="#e3effa" font-size="21"><text x="210" y="240">ENCRYPTED VAULT</text><text x="580" y="240">COMMIT</text><text x="950" y="240">EPHEMERAL RUN</text><text x="1305" y="240">VERIFY</text></g>
+  <g fill="#85a4bc" font-size="15"><text x="210" y="275">tasks • truth • rules</text><text x="580" y="275">task • env • scorer hashes</text><text x="950" y="275">fresh local environment</text><text x="1305" y="275">signed evidence chain</text></g></g>
+  <g stroke="#55c9ac" stroke-width="4"><path d="M345 255H445"/><path d="M715 255H815"/><path d="M1085 255H1185"/></g>
+  <path d="M80 410H1420" stroke="#1d4058" stroke-width="2"/><text x="80" y="462" fill="#76e2c2" font-family="ui-monospace, monospace" font-size="20">COMMIT → RUN → REVEAL → VERIFY</text><text x="80" y="510" fill="#8ba9c0" font-family="ui-sans-serif, system-ui" font-size="18">Sequestration reduces leakage risk; it does not prove absence of model contamination.</text>
+</svg>

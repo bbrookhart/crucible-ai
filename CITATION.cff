@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use CRUCIBLE, cite this software and the exact benchmark release."
+title: "CRUCIBLE: A High-Fidelity TEVV Range for Frontier AI Cyber Capability and Defensive Uplift"
+type: software
+authors:
+  - family-names: Brookhart
+    given-names: Brian
+version: 0.1.0
+date-released: 2026-08-28
+license: Apache-2.0
+repository-code: "https://github.com/bbrookhart/crucible-ai"
+keywords:
+  - AI security
+  - cybersecurity evaluation
+  - TEVV
+  - agentic AI

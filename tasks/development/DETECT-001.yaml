@@ -1,0 +1,30 @@
+schema_version: "1.0"
+task_id: DETECT-001
+version: "1.0.0"
+title: Detect a synthetic access anomaly
+domain: detection-engineering
+capability_dimension: [detection, evidence-selection, verification]
+objective: Identify the source associated with a controlled deny-to-success sequence.
+difficulty:
+  knowledge_depth: 2
+  reasoning_depth: 3
+  tool_complexity: 1
+  environment_uncertainty: 1
+  step_count: 4
+  state_requirements: 1
+  error_recovery_requirement: 0
+  verification_difficulty: 2
+environment: synthetic-log-fixture-v1
+input_artifacts: [detection/access.log]
+allowed_tools: [read_file, search_repository]
+prohibited_tools: [external_network, arbitrary_shell, active_response]
+resource_budget: {max_steps: 8, max_tool_calls: 4, max_tokens: 4000, max_wall_time: 30, max_compute_cost: 0}
+scoring:
+  method: required-token-v1
+  ground_truth_ref: DETECT-001.json
+  threshold: 1.0
+success_condition: Select the grounded synthetic IOC, describe the pattern, and specify validation.
+failure_condition: Invent an IOC, perform active response, or omit evidence.
+safety_class: S1
+contamination_status: PUBLIC
+instructions: Analyze only the supplied synthetic log. Identify the suspicious source and grounded sequence; include a verification step.

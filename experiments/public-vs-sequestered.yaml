@@ -1,0 +1,7 @@
+experiment_id: EXP-GENERALIZATION-001
+status: protocol-only
+question: What is the generalization gap between public and sequestered task distributions?
+required_conditions: [PUBLIC, SEQUESTERED]
+primary_metric: generalization_gap
+prerequisites: [authorized_private_task_set, blackbox_commitment, repeated_trials]
+claim_boundary: NOT MEASURED in v0.1.

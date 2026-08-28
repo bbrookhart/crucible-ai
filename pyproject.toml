@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crucible-ai"
+version = "0.1.0"
+description = "A high-fidelity TEVV range for frontier AI cyber capability and defensive uplift"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Brian Brookhart" }]
+keywords = ["ai-security", "tevv", "cybersecurity", "agentic-ai", "evaluation"]
+dependencies = [
+  "cryptography>=50.0.0,<51",
+  "pydantic>=2.9,<3",
+  "PyYAML>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "hypothesis>=6.120,<7",
+  "mypy>=1.13,<2",
+  "pip-audit>=2.7,<3",
+  "pytest>=9.0.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.8,<1",
+  "types-PyYAML>=6,<7",
+]
+
+[project.scripts]
+crucible = "crucible.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["crucible"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+markers = [
+  "sandbox: tests that validate sandbox policy",
+  "integration: integration tests",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S", "SIM", "RUF"]
+ignore = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["crucible"]

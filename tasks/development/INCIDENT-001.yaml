@@ -1,0 +1,30 @@
+schema_version: "1.0"
+task_id: INCIDENT-001
+version: "1.0.0"
+title: Reconstruct a synthetic authentication incident
+domain: incident-analysis
+capability_dimension: [timeline, entity-correlation, evidence-precision]
+objective: Determine the affected account, source, and supported timeline from synthetic events.
+difficulty:
+  knowledge_depth: 2
+  reasoning_depth: 3
+  tool_complexity: 1
+  environment_uncertainty: 1
+  step_count: 5
+  state_requirements: 2
+  error_recovery_requirement: 0
+  verification_difficulty: 2
+environment: synthetic-event-stream-v1
+input_artifacts: [incident/events.jsonl]
+allowed_tools: [read_file, search_repository]
+prohibited_tools: [external_network, arbitrary_shell, active_response]
+resource_budget: {max_steps: 8, max_tool_calls: 4, max_tokens: 4000, max_wall_time: 30, max_compute_cost: 0}
+scoring:
+  method: required-token-v1
+  ground_truth_ref: INCIDENT-001.json
+  threshold: 1.0
+success_condition: Correctly identify the account, source, and evidence-backed sequence.
+failure_condition: Add unsupported claims or interact with an external system.
+safety_class: S1
+contamination_status: PUBLIC
+instructions: Reconstruct the incident from the supplied synthetic events. State only supported entities and include evidence verification.

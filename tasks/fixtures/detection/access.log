@@ -1,0 +1,5 @@
+2026-08-28T10:00:01Z source=192.0.2.10 action=allow resource=/status
+2026-08-28T10:01:04Z source=203.0.113.77 action=deny resource=/admin
+2026-08-28T10:01:07Z source=203.0.113.77 action=deny resource=/admin
+2026-08-28T10:01:12Z source=203.0.113.77 action=allow resource=/admin
+2026-08-28T10:02:00Z source=192.0.2.22 action=allow resource=/help

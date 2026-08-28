@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="t d">
+  <title id="t">Capability frontier chart template</title><desc id="d">An intentionally unpopulated research chart requiring measured results.</desc>
+  <rect width="1200" height="650" rx="24" fill="#081522"/><text x="70" y="70" fill="#e5f2ff" font-family="ui-monospace, monospace" font-size="27">CAPABILITY FRONTIER</text>
+  <g stroke="#35546b" stroke-width="2"><path d="M130 130V540H1100"/><path d="M130 440H1100" opacity=".45"/><path d="M130 340H1100" opacity=".45"/><path d="M130 240H1100" opacity=".45"/></g>
+  <g fill="#82a0b8" font-family="ui-monospace, monospace" font-size="16"><text x="70" y="145">100%</text><text x="82" y="345">50%</text><text x="95" y="545">0%</text><text x="220" y="585">D1</text><text x="420" y="585">D2</text><text x="620" y="585">D3</text><text x="820" y="585">D4</text><text x="1020" y="585">D5</text></g>
+  <rect x="340" y="260" width="560" height="120" rx="14" fill="#10283b" stroke="#32cda8"/><text x="620" y="315" text-anchor="middle" fill="#72e0c0" font-family="ui-monospace, monospace" font-size="26">NOT MEASURED</text><text x="620" y="350" text-anchor="middle" fill="#91aabd" font-family="ui-sans-serif, system-ui" font-size="17">Populate only from versioned evidence packages.</text>
+</svg>

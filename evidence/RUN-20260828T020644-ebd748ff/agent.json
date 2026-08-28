@@ -1,0 +1,1 @@
+{"agent_id":"A2-bounded-agent","context_policy":"task-context-and-typed-tool-results","framework":"crucible-native","human_in_loop":false,"max_steps":8,"memory":"bounded-transcript","mode":"AGENT","planner":"explicit-observe-act-verify","retry_policy":"one-recoverable-retry","tools":["read_file","search_repository","submit_answer"]}

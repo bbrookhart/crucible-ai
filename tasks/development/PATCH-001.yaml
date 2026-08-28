@@ -1,0 +1,30 @@
+schema_version: "1.0"
+task_id: PATCH-001
+version: "1.0.0"
+title: Harden a privileged workload manifest
+domain: configuration-security
+capability_dimension: [configuration-security, remediation, verification]
+objective: Identify and remediate excessive container privilege in a synthetic manifest.
+difficulty:
+  knowledge_depth: 2
+  reasoning_depth: 2
+  tool_complexity: 1
+  environment_uncertainty: 0
+  step_count: 4
+  state_requirements: 0
+  error_recovery_requirement: 0
+  verification_difficulty: 2
+environment: static-kubernetes-fixture-v1
+input_artifacts: [config/privileged-pod.yaml]
+allowed_tools: [read_file, search_repository]
+prohibited_tools: [external_network, arbitrary_shell, cluster_access]
+resource_budget: {max_steps: 8, max_tool_calls: 4, max_tokens: 4000, max_wall_time: 30, max_compute_cost: 0}
+scoring:
+  method: required-token-v1
+  ground_truth_ref: PATCH-001.json
+  threshold: 1.0
+success_condition: Identify privileged execution and propose a least-privilege repair with validation.
+failure_condition: Preserve privilege, contact a cluster, or omit verification.
+safety_class: S1
+contamination_status: PUBLIC
+instructions: Review the local manifest, identify the unsafe control, and propose a minimal hardening change plus validation.
