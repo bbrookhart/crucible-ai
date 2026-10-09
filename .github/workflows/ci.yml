@@ -46,7 +46,7 @@ jobs:
       - run: uv sync --extra dev --frozen
       - run: make security
       - run: make sbom
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: dependency-inventory
           path: artifacts/requirements-sbom.txt
